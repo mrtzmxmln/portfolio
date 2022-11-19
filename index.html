@@ -8,49 +8,95 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <div class="loading">
+
+    </div>
+
     <div id="Navigation">
         <nav></nav>
     </div>
 
     <div id="Intro" class="contentDiv intro">
         <div class="container">
-            <div class="contentDivText reveal active">
+
+            <div class="contentDivText fadeIntro">
                 <div class="heading">
                     <h1>Moritz Maximilian</h1>
                 </div>
-                <p><b>hi there</b>, thank you for visiting my <b>portfolio</b>. here you will learn about me, my <b>educational background</b>, me as an <b>artist</b> and where things are going. feel free to contact me if you have any questions or are interested in working with me.</p>
+                <p>
+                    hi there, welcome to my portfolio - here you will learn about my educational background, the events i do, me as an artist and where things are going. feel free to contact me if you have any questions or are interested in working with me. 
+                </p>
             </div>
-            <div class="contentDivImg">
+
+            <div class="contentDivImg fadeShort">
                 <img src="./images/bg_Intro.jpg" alt="profile image">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="Diploma" class="contentDiv">
+        <div class="container">
+
+            <div class="contentDivImg">
+                <img class="imgB" src="./images/bg_Diploma_1.jpg" alt="">
+                <img class="imgA" src="./images/bg_Diploma_2.jpg" alt="">
+            </div>
+
+            <div class="contentDivText fadeRight">
+                <div class="heading">
+                    <h2>Event Salesman Diploma</h2>
+                </div>
+                <p>
+                    I graduated 2018 at <a href="https://www.macromedia-ausbildung.de" target="_blank">Macromedia Academy</a>. While studying I completed my first internship at <a href="https://veranstaltungen-technik.de" target="_blank">Koehne Veranstaltungen & Technik</a> and a second one at <a href="https://www.facebook.com/clubdrvogel" target="_blank">NBV Club GmbH</a>. We had a blast organising our class project <a href="https://www.facebook.com/querdenkerduell" target="_blank">Querdenker - Das Schulduell</a> and furthermore lucky me was chosen to have a talk with industry leading CEOs, to name some noteworthy happenings.
+                </p>
             </div>
         </div>
     </div>
 
     <div id="Event" class="contentDiv">
         <div class="container">
-            <div class="contentDivImg">
-                <img src="./images/bg_Events.png" alt="">
-            </div>
-            <div class="contentDivText reveal">
+
+            <div class="contentDivText fadeLeft">
                 <div class="heading">
                     <h2>Event Manager & Host</h2>
                 </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum nostrum, explicabo animi alias, debitis repudiandae earum accusamus quasi fugiat asperiores praesentium illum, eligendi eaque! Repellendus repudiandae recusandae molestias dolor ea?</p>
+                <p>
+                    In 2022 I gathered with some friends, to translate an idea of creating an open and safe space for people interested in experimental, avant-garde electronic music and the scene around it, into reality. As a collective we managed and hosted three outstanding events with great success for art and culture in the city of Osnabrueck and beyond. Have you been there?
+                </p>
+                <div class="buttonsDiv">
+                    <button onclick="openPiknic()">Piknic Elektronic</button>
+                </div>
             </div>
+
+            <div class="contentDivImg">
+                <img src="./images/bg_Event.jpg" alt="">
+            </div>
+
         </div>
     </div>
 
     <div id="Artist" class="contentDiv">
         <div class="container">
-            <div class="contentDivText reveal">
-                <div class="heading">
-                    <h2>Tech-House & Techno Artist</h2>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur odio quibusdam sequi voluptates consequatur, est ratione quod repellat architecto, temporibus vel, natus cum vitae eius. Hic odit laboriosam maxime?</p>
-            </div>
+
             <div class="contentDivImg">
                 <img src="./images/bg_Artist.jpg" alt="">
             </div>
+
+            <div class="contentDivText fadeRight">
+                <div class="heading">
+                    <h2>DJ & Artist</h2>
+                </div>
+                <p>
+                    Since my youth I dreamed about leading gathered souls into emotional heights with the power of music, because for me, music is the answer. What shall I say… some dreams come true if you work hard for it while withstanding all the headwind!
+                </p>
+                <div class="buttonsDiv">
+                    <button onclick="openSoundCloud()">SoundCloud</button>
+                    <button onclick="openInstagram()">Instagram</button>
+                </div>
+                
+            </div>
+
         </div>
     </div>
 
@@ -63,6 +109,8 @@
     
 
     <div id="Footer"></div>
+
+    
 
     <script src="./script.js"></script>
 </body>
