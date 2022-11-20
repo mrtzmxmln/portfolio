@@ -1,3 +1,4 @@
+/*-- ANIMATIONS --*/
 function fadeShort() {
     var fadeShort = document.querySelector(".fadeShort");
     
@@ -48,6 +49,11 @@ function fadeLeft() {
     }
 }
 
+function checkSidebar() {
+    var sideBars = document.querySelectorAll=(".bar");
+}
+
+/*-- LINKS --*/
 function openSoundCloud() {
     window.open("https://soundcloud.com/mrtzmxmln");
 }
@@ -84,6 +90,10 @@ function openLeni() {
     window.open("https://homebyleni.de");
 }
 
+function sendMail() {
+    window.open("mailto:moritzmaximilian@gmx.net")
+}
+
 function openLinkedIn() {
     window.open("https://www.linkedin.com/in/moritz-meyer-77562a231/");
 }
@@ -92,6 +102,7 @@ function openXing() {
     window.open("https://www.xing.com/profile/Moritz_Meyer65/cv");
 }
 
+/*-- execute Script --*/
 window.addEventListener("scroll", fadeRight);
 window.addEventListener("scroll", fadeLeft);
 fadeShort();

@@ -103,15 +103,38 @@ button {
 
 @media screen and (max-width: 768px) {
     button {
+        border-radius: 8px;
         font-size: 14px;
     }
 }
 
+#Sidebar {
+    position: fixed;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.bar {
+    height: 40px;
+    width: 6px;
+
+    border-radius: 2px;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    background-color: green;
+}
+
 /*-- CONTENT DIVs --*/
 .contentDiv {
-    min-height: 75vh;
-    height: fit-content;
-    
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+
     padding-top: 3vh;
     padding-bottom: 3vh;
 
@@ -186,10 +209,6 @@ button {
 
 /*-- IDs --*/
 #Intro {
-}
-
-#Intro .contentDivText {
-    text-align: right;
 }
 
 #Intro button {
@@ -269,10 +288,6 @@ button {
     color: white;
 }
 
-#Event .contentDivText {
-    text-align: right;
-}
-
 #WebDev {
     background-color: #747572;
     color: white;
@@ -292,10 +307,6 @@ button {
     background-color: orangered;
 }
 
-#Artist .contentDivText {
-    text-align: right;
-}
-
 #Artist button {
     color: white;
 }
@@ -303,6 +314,12 @@ button {
 #Artist button:hover {
     color: orangered;
     background-color: white;
+}
+
+#Footer {
+    min-height: 0;
+    background-color: black;
+    font-size: 14px;
 }
 
 /*-- ANIMATION STUFF --*/
