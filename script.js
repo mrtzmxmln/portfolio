@@ -56,8 +56,40 @@ function openInstagram() {
     window.open("https://www.instagram.com");
 }
 
+function openFacebook() {
+    window.open("https://facebook.com/mrtzmxmln")
+}
+
+function openResident() {
+    window.open("https://ra.co/dj/moritzmaximilian");
+}
+
 function openPiknic() {
     window.open("http://mrtzmxmln.github.io/risingufo");
+}
+
+function openAcademy() {
+    window.open("https://www.macromedia-ausbildung.de")
+}
+
+function openProject() {
+    window.open("https://www.facebook.com/querdenkerduell");
+}
+
+function openUfo() {
+    window.open("https://mrtzmxmln.github.io/risingufo")
+}
+
+function openLeni() {
+    window.open("https://homebyleni.de");
+}
+
+function openLinkedIn() {
+    window.open("https://www.linkedin.com/in/moritz-meyer-77562a231/");
+}
+
+function openXing() {
+    window.open("https://www.xing.com/profile/Moritz_Meyer65/cv");
 }
 
 window.addEventListener("scroll", fadeRight);

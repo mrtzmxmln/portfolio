@@ -14,18 +14,23 @@
     src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 html {
     font-family: Quicksand;
     font-weight: 300;
+
+    background-color: black;
 }
 
 body {
     margin: 0;
-    max-width: 100vw;
 
     display: flex;
     flex-direction: column;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,6 +66,13 @@ h1 {
 p {
     text-align: justify;
     text-transform: lowercase;
+    hyphens: auto;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 14px;
+    }
 }
 
 a {
@@ -85,14 +97,14 @@ button {
     font-size: 16px;
 
     background-color: transparent;
-    color: orangered;
     border: 2px solid;
     transition: 0.5s all ease;
 }
 
-button:hover {
-    background-color: orangered;
-    color: white;
+@media screen and (max-width: 768px) {
+    button {
+        font-size: 14px;
+    }
 }
 
 /*-- CONTENT DIVs --*/
@@ -172,13 +184,58 @@ button:hover {
 #Intro {
 }
 
+#Intro .contentDivText {
+    text-align: right;
+}
+
+#Intro button {
+    color: white;
+}
+
+#Intro button:hover {
+    background-color: white;
+    color: black;
+}
+
 #Diploma {
+    background-color: white;
+    color: #747572;
+}
+
+#Diploma .container:hover h1,
+#Diploma .container:hover h2 {
+    border-bottom: 2px solid #747572;
+}
+
+#Diploma a {
+    border-bottom: 1px solid #747572;
+}
+
+#Diploma a:hover {
+    border-bottom: 1px solid orangered;
+}
+
+#Diploma button {
+    color: #747572;
+    border-color: #93DB7E;
+}
+
+#Diploma button:hover {
+    color: white;
+    background-color: #93DB7E;
 }
 
 #Diploma .contentDivImg {
     position: relative;
     min-height: 390px;
     min-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    #Diploma .contentDivImg {
+        min-width: 300px;
+        min-height: 295px;
+    }
 }
 
 #Diploma .contentDivImg .imgA {
@@ -198,13 +255,46 @@ button:hover {
 #Event {
 }
 
-#Event .container {
+#Event button {
+    color: white;
+    border-color: #D19342;
 }
 
-#Artist {
+#Event button:hover {
+    background-color: #D19342;
+    color: white;
+}
+
+#Event .contentDivText {
+    text-align: right;
 }
 
 #WebDev {
+    background-color: #747572;
+    color: white;
+}
+
+#WebDev button {
+    border-color: #20A4F3;
+    color: white;
+}
+
+#WebDev button:hover {
+    color: white;
+    background-color: #20A4F3;
+}
+
+#Artist {
+    background-color: orangered;
+}
+
+#Artist button {
+    color: white;
+}
+
+#Artist button:hover {
+    color: orangered;
+    background-color: white;
 }
 
 /*-- ANIMATION STUFF --*/
