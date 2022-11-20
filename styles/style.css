@@ -180,6 +180,10 @@ button {
     }
 }
 
+.bottomDiv {
+    padding-bottom: 50px;
+}
+
 /*-- IDs --*/
 #Intro {
 }
@@ -286,6 +290,10 @@ button {
 
 #Artist {
     background-color: orangered;
+}
+
+#Artist .contentDivText {
+    text-align: right;
 }
 
 #Artist button {
