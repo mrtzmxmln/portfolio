@@ -201,8 +201,8 @@ button:hover {
 }
 
 .bar {
-    height: 20px;
-    min-width: 20px;
+    height: 30px;
+    min-width: 30px;
     width: fit-content;
 
     margin-top: 4px;
@@ -212,12 +212,21 @@ button:hover {
     align-items: center;
     justify-content: center;
 
-    font-size: 10px;
+    font-size: 16px;
     font-weight: bold;
     border: 2px solid;
     border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.2);
     transition: 0.5s all ease;
+}
+
+@media screen and (max-width: 768px) {
+    .bar {
+        height: 20px;
+        min-width: 20px;
+
+        font-size: 10px;
+    }
 }
 
 .bar:hover {
