@@ -295,6 +295,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     .contentDiv {
         padding-right: 25%;
+        padding-bottom: 0;
     }
 }
 
