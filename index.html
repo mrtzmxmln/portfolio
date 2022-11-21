@@ -7,19 +7,23 @@
     <title>Moritz Maximilian</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    <div id="Loader" class="">
+
+<body onload="loadCheck()">
+    <div id="Loader" class="loadingScreen">
+        <div class="loader">
+            <div class="loaderB"></div>
+        </div>
+    </div>
+    
+    <div id="Sidebar">
+        <div id="bar1" class="bar" onclick="scrollIntro()">M</div>
+        <div id="bar2" class="bar" onclick="scrollDiploma()">E</div>
+        <div id="bar3" class="bar" onclick="scrollEvent()">P</div>
+        <div id="bar4" class="bar" onclick="scrollWebDev()">W</div>
+        <div id="bar5" class="bar" onclick="scrollArtist()">A</div>
     </div>
 
-    <div id="Sidebar" class="">
-        <div id="bar1" class="bar">M</div>
-        <div id="bar2" class="bar">E</div>
-        <div id="bar3" class="bar">P</div>
-        <div id="bar4" class="bar">W</div>
-        <div id="bar5" class="bar">A</div>
-    </div>
-
-    <div id="Intro" class="contentDiv intro">
+    <div id="Intro" class="contentDiv">
         <div class="container">
 
             <div class="contentDivText fadeIntro">
@@ -93,7 +97,7 @@
         <div class="container">
 
             <div class="contentDivImg">
-                <img src="./images/bg_WebDev.jpg" alt="" style="">
+                <img src="./images/bg_WebDev.jpg" alt="">
             </div>
 
             <div class="contentDivText fadeRight">
@@ -101,7 +105,7 @@
                     <h2>Web Developer</h2>
                 </div>
                 <p>
-                    web devlopment is my passion. check out some of my handmade, modern & minimalistic web designs down below. all my projects are developed in tight communication with and are focused on the customers needs while maintaining a casual and open minded vibe.
+                    web devlopment is my passion. check out some of my handmade, modern & minimalistic web designs down below. all my projects are developed in tight communication with the customer and are always focused on the clients needs throughout the whole developement process, while maintaining a casual and open minded vibe.
                 </p>
                 <div class="buttonsDiv">
                     <button onclick="openUfo()">risingufo.de</button>
@@ -134,17 +138,9 @@
         </div>
     </div>
 
-    <!--
-        <div id="WebDev" class="contentDiv">
-        <h2>Web Developer</h2><br>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quas, error at voluptatum, atque tenetur esse expedita, fugit totam est maiores eveniet? Nostrum quam inventore voluptate eius laborum reiciendis doloremque.</p>
-        </div>
-    -->
-    
-
     <div id="Footer" class="contentDiv">
         <div class="container">
-            <a href="">Imprint</a>
+            <a href="./imprint.html">Imprint</a>
             <a href="">Privacy Policy</a>
         </div>
     </div>

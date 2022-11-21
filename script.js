@@ -49,29 +49,30 @@ function fadeLeft() {
     }
 }
 
-function checkSidebar() {
-    var sideBars = document.querySelectorAll=(".bar");
-}
-
 /*-- SCROLLS --*/
 function scrollIntro() {
-    
+    const intro = document.getElementById("Intro");
+    intro.scrollIntoView({behavior: "smooth"});
 }
 
 function scrollDiploma() {
-
+    const diploma = document.getElementById("Diploma");
+    diploma.scrollIntoView({behavior: "smooth"});
 }
 
 function scrollEvent() {
-
+    const event = document.getElementById("Event");
+    event.scrollIntoView({behavior: "smooth"});
 }
 
 function scrollWebDev() {
-
+    const webdev = document.getElementById("WebDev");
+    webdev.scrollIntoView({behavior: "smooth"});
 }
 
 function scrollArtist() {
-    
+    const artist = document.getElementById("Artist");
+    artist.scrollIntoView({behavior: "smooth"});
 }
 
 /*-- LINKS --*/
@@ -123,8 +124,22 @@ function openXing() {
     window.open("https://www.xing.com/profile/Moritz_Meyer65/cv");
 }
 
+function openHome() {
+    window.open("./index.html", "_self");
+}
+
 /*-- execute Script --*/
 window.addEventListener("scroll", fadeRight);
 window.addEventListener("scroll", fadeLeft);
-fadeShort();
-fadeIntro();
+
+function loadCheck(){
+    var loader = document.getElementById("Loader");
+    setTimeout(function(){
+        loader.classList.add("loadingScreenHide");
+        setTimeout(function(){
+            loader.classList.add("loadingScreenOff");
+        }, 2000);
+        fadeShort();
+        fadeIntro();
+    }, 2000)   
+}
