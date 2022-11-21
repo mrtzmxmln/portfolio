@@ -53,6 +53,27 @@ function checkSidebar() {
     var sideBars = document.querySelectorAll=(".bar");
 }
 
+/*-- SCROLLS --*/
+function scrollIntro() {
+    
+}
+
+function scrollDiploma() {
+
+}
+
+function scrollEvent() {
+
+}
+
+function scrollWebDev() {
+
+}
+
+function scrollArtist() {
+    
+}
+
 /*-- LINKS --*/
 function openSoundCloud() {
     window.open("https://soundcloud.com/mrtzmxmln");

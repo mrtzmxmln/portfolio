@@ -129,24 +129,98 @@ button {
 
 #Sidebar {
     position: fixed;
-    height: 100%;
+    /* top: 50%; */
+    right: 0;
+    bottom: 30px; 
+    /* transform: translate(0%, -50%); */
+
+    height: min-content;
+
+    padding-right: 16px;
+    border-radius: 2px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    #Sidebar {
+        padding-right: 8px;
+    }
 }
 
 .bar {
-    height: 40px;
-    width: 6px;
+    height: 20px;
+    width: 20px;
 
-    border-radius: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 
-    margin-top: 8px;
-    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    background-color: green;
+    font-size: 10px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s all ease;
+}
+
+#bar1 {
+    color: white;
+    border-color: white;
+}
+
+#bar1:hover {
+    color: black;
+    background-color: white;
+}
+
+#bar2 {
+    color: #93DB7E;
+    border-color: #93DB7E;
+}
+
+#bar2:hover {
+    color: white;
+    border-color: white;
+    background-color: rgba(147, 219, 126, 1);
+}
+
+#bar3 {
+    color: #D19342;
+    border-color: #D19342;
+}
+
+#bar3:hover {
+    color: white;
+    border-color: white;
+    background-color: #D19342;
+}
+
+#bar4 {
+    color: #20A4F3;
+    border-color: #20A4F3;
+}
+
+#bar4:hover {
+    color: white;
+    background-color: #20A4F3;
+}
+
+#bar5 {
+    color: orangered;
+    border-color: orangered;
+}
+
+#bar5:hover {
+    color: white;
+    background-color: orangered;
 }
 
 /*-- CONTENT DIVs --*/
@@ -167,6 +241,12 @@ button {
 
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .contentDiv {
+        padding-right: 25%;
+    }
 }
 
 .container:hover h1,
