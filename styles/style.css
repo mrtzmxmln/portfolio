@@ -285,7 +285,6 @@ button:hover {
 
 /*-- CONTENT DIVs --*/
 .contentDiv {
-    height: auto;
     min-height: 100vh;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
