@@ -1,4 +1,6 @@
 const pageTitle = document.title;
+const imgSrcA = "./images/img_Diploma_A.webp";
+const imgSrcB = "./images/img_Diploma_B.webp";
 
 /*-- ANIMATIONS --*/
 function fadeShort() {
@@ -159,4 +161,3 @@ function loadCheck(){
         fadeIntro();
     }, 2000)   
 }
-

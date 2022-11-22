@@ -285,13 +285,14 @@ button:hover {
 
 /*-- CONTENT DIVs --*/
 .contentDiv {
-    min-height: 100vh;
+    height: 100vh;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height: fill-available;
 
     padding-left: 15%;
     padding-right: 15%;
+    padding-bottom: 20px;
 
     display: flex;
     flex-direction: column;
@@ -306,6 +307,10 @@ button:hover {
     .contentDiv {
         padding-right: 25%;
     }
+
+    .contentDiv #Footer {
+        padding-right: 0px;
+    }
 }
 
 .container:hover h1,
@@ -316,15 +321,10 @@ button:hover {
 .container {
     max-width: 1920px;
 
-    padding: 20px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;
-
-    border-radius: 40px;
-    /* border: 1px solid white; */
 }
 
 .contentDivText {
@@ -406,33 +406,6 @@ button:hover {
     background-color: #93DB7E;
 }
 
-#Diploma .contentDivImg {
-    position: relative;
-    min-height: 390px;
-    min-width: 400px;
-}
-
-@media screen and (max-width: 768px) {
-    #Diploma .contentDivImg {
-        min-width: 300px;
-        min-height: 295px;
-    }
-}
-
-#Diploma .contentDivImg .imgA {
-    position: absolute;
-    width: 80%;
-    bottom: 0;
-    right: 0;
-}
-
-#Diploma .contentDivImg .imgB {
-    position: absolute;
-    width: 80%;
-    top: 0;
-    left: 0;
-}
-
 #Event {
 }
 
@@ -475,9 +448,18 @@ button:hover {
 }
 
 #Footer {
-    min-height: 0;
+    min-height: 0px;
+    height: min-content;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     background-color: black;
     font-size: 14px;
+}
+
+#Footer .container {
+    align-items: center;
 }
 
 #Imprint p {
