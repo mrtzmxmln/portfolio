@@ -1,3 +1,5 @@
+const pageTitle = document.title;
+
 /*-- ANIMATIONS --*/
 function fadeShort() {
     var fadeShort = document.querySelector(".fadeShort");
@@ -128,9 +130,23 @@ function openHome() {
     window.open("./index.html", "_self");
 }
 
+/*-- TEXT CHANGES --*/
+function tabHidden() {
+    var attentionMessage = "Free Cookies! 🍪";
+    var pageActive = !document.hidden;
+
+    if(!pageActive) {
+        document.title = attentionMessage;
+        blink();
+    } else if(pageActive) {
+        document.title = pageTitle;
+    }
+}
+
 /*-- execute Script --*/
 window.addEventListener("scroll", fadeRight);
 window.addEventListener("scroll", fadeLeft);
+window.addEventListener("visibilitychange", tabHidden);
 
 function loadCheck(){
     var loader = document.getElementById("Loader");
@@ -143,3 +159,4 @@ function loadCheck(){
         fadeIntro();
     }, 2000)   
 }
+
