@@ -286,7 +286,6 @@ button:hover {
 /*-- CONTENT DIVs --*/
 .contentDiv {
     min-height: 100vh;
-    min-height: -webkit-fill-available;
 
     padding-left: 15%;
     padding-right: 15%;
