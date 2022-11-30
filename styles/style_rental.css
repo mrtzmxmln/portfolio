@@ -32,13 +32,16 @@ body {
 
 section {
     width: 100%;
-    min-height: 100vh;
-    height: auto;
+    min-height: fit-content;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+img {
+    border-radius: 20px;
 }
 
 p {
@@ -52,6 +55,15 @@ p {
     max-width: 1080px;
     width: 90%;
 
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textBox {
     display: flex;
     flex-direction: column;
 }
